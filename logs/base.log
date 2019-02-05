@@ -1,6 +1,0 @@
-2019-02-05 23:10:18,897:INFO:Reading URL: https://www.flipkart.com/
-2019-02-05 23:10:20,279:INFO:Writing to file: extractedpages/flipkart.txt
-2019-02-05 23:10:20,446:INFO:Reading URL: https://www.google.com/
-2019-02-05 23:10:20,634:INFO:Writing to file: extractedpages/google.txt
-2019-02-05 23:10:20,728:INFO:Reading URL: https://www.amazon.in/
-2019-02-05 23:10:22,071:INFO:Writing to file: extractedpages/amazon.txt
