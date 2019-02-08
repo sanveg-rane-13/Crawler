@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 class UrlLoader:
-    __url_file_path = "resources/urls.json"
+    __url_file_path = "../resources/urls.json"
 
     def get_urls(self):
         relative = Path(self.__url_file_path)

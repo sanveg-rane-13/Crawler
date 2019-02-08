@@ -8,7 +8,6 @@ class WebPageReader:
         logger.info("Reading URL: " + url)
 
         parsed_page = None
-        converted_page = None
 
         try:
             url_page = reader.Request(url);
@@ -18,12 +17,6 @@ class WebPageReader:
             logger.ERROR("Error parsing URL")
         except reader.error.HTTPError:
             logger.ERROR("Error reading page")
-
-        # if parsed_page is not None:
-        #     try:
-        #         converted_page = parsed_page.decode('utf-8')
-        #     except UnicodeDecodeError:
-        #         logger.error("Error converting page to string")
 
         return parsed_page
 

@@ -5,21 +5,6 @@ from src.FileWriter import FileWriter
 import time
 import logging as logger
 
-# basic logging to file
-logger.basicConfig(
-    filename="logs/base.log",
-    level=logger.DEBUG,
-    format="%(asctime)s: %(name)-12s: %(levelname)-8s:%(message)s",
-)
-
-# set up logging to console
-console = logger.StreamHandler()
-console.setLevel(logger.DEBUG)
-formatter = logger.Formatter('%(name)-12s: %(levelname)-8s %(message)s')
-console.setFormatter(formatter)
-logger.getLogger('').addHandler(console)
-logger = logger.getLogger(__name__)
-
 
 class Base:
     __page_urls = None
@@ -47,10 +32,3 @@ class Base:
 
     def __save_page(self, file_name, page):
         self.writer.write_to_file(file_name, page)
-
-
-'''
-    Main Method
-'''
-if __name__ == '__main__':
-    Base().read_web_pages()
